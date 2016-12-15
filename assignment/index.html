@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom Image Carousel API v 1.0 from Praveen P</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/praveen_slider_widget.css">
+	<body>
+	<div class="container">
+		<!--<div style="width:400px;">-->
+			<div class="customslider"></div><!-- Use this div anywhere you like -->			
+		<!-- </div> -->
+	</div>
+	
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/praveen_slider_widget.js"></script>
+		<script>
+		/* 
+			A very basic carousel made my Praveen P, UI Developer for interview @ wittyparrot 
+			Source Code: view source of js/praveen_slider_widget.js and css/praveen_slider_widget.css for js and css implementations respectively
+			
+		*/
+			$(document).ready(function(){				
+				var imageslist = ['images/Chrysanthemum.png', 'images/Desert.png', 'images/Chrysanthemum.png', 'images/Hydrangeas.png', 'images/Jellyfish.png'];				
+				var speed = 2000;				
+				/*
+				customsliderwidget API details:
+				@param: imagelist: an array of image URLs used as a source
+				@param: speed: show/hide animation speed in milliseconds				
+				*/
+				customsliderwidget(imageslist, speed );
+			});
+			
+		</script>
+	</body>
+</html>
